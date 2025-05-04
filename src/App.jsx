@@ -1,16 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import ProductList  from "./components/ProductList";
+import './App.css';
+import ProductList from './components/ProductList';
 
 function App() {
   return (
-    <>
-      <title>Products</title>
-      <ProductList />
-    </>
-  )
-}
+    <main className="min-h-screen flex items-center justify-center p-4">
+        <ProductList />
+    </main>
+  );
+};
 
-export default App
+export default App;

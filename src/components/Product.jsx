@@ -1,10 +1,8 @@
-export default function Product({ product }){
+export default function Product({ product }) {
   return (
-    <>
-    <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 mb-2">
-		<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{product.name}</h5>
-		<p class="font-normal text-gray-700 dark:text-gray-400">{product.price}</p>
-	</a>
-    </>
+    <div className="rounded-xl shadow-md p-6 bg-gray-900">
+        <h2 className="text-xl font-semibold mb-2">{product.name}</h2>
+        <p className="text-gray-700 dark:text-gray-300">Price : ${product.price}</p>
+    </div>
   );
 }
